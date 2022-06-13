@@ -6,6 +6,7 @@ function Login() {
     return <LoginDiv>
             <LoginContainer>
                 <LoginLogo src={logo} alt="logo" />
+                <Text heading>Login</Text>
             </LoginContainer>
         </LoginDiv >
 }
@@ -35,5 +36,10 @@ const LoginLogo = style.img`
     height: 100px;  
 `
 
+const Text = style.div`
+    font-size: ${props => props.heading ? "30px" : "20px"};
+    color: #3498db;
+    font-weight: bold;
+`
 
 export default Login;
